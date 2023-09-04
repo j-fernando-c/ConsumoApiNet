@@ -1,0 +1,14 @@
+﻿@model IEnumerable<pokedex.Models.Pokemon>
+
+<div class="card-container">
+    @foreach (var pokemon in Model)
+    {
+        <div class="card">
+            <img src="@pokemon.image" alt="@pokemon.name" class="card-image">
+            <div class="card-content">
+                <h3>@pokemon.name</h3>
+                <p>URL: @pokemon.image</p>
+            </div>
+        </div>
+    }
+</div>
